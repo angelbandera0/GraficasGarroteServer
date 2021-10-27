@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <%- include('./partials/head') %>
+
+    <body>
+        <!-- Page Preloder -->
+        <%- include('./partials/preloader') %>
+
+    <!-- Header Section Begin -->
+    <%- include('./partials/header') %>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bo-links">
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                        <span>Contact</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Contact Section Begin -->
+    
+    <section class="contact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact-text">
+                        <h3>Get in touch</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <div class="ct-item">
+                            <div class="ct-icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="ct-text">
+                                <h5>Address</h5>
+                                <p>333 Middle Winchendon Rd, Rindge, NH 03461</p>
+                            </div>
+                        </div>
+                        <div class="ct-item">
+                            <div class="ct-icon">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <div class="ct-text">
+                                <h5>Phone</h5>
+                                <ul>
+                                    <li>125-711-811</li>
+                                    <li>125-668-886</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ct-item">
+                            <div class="ct-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="ct-text">
+                                <h5>Email</h5>
+                                <p>Support.photography@ gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="contact-form">
+                        <h3>Registrarse</h3>
+                        <form method="POST" action="/api/users/">
+                            <input type="text" name="name" placeholder="Nombre y Apellidos">
+                            <input type="text" name="email" placeholder="Correo">
+                            <input type="password" name="password" placeholder="Contraseña">
+                            
+                            <button type="submit" class="site-btn">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Begin -->
+    <%- include('./partials/footer') %>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <%- include('./partials/scripts') %>
+</body>
+
+</html>
